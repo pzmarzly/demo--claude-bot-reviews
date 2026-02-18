@@ -22,10 +22,9 @@ jobs:
                   plugin_marketplaces: "https://github.com/anthropics/claude-code.git"
                   plugins: "code-review@claude-code-plugins"
                   prompt: |
-                      /code-review:code-review --comment ${{ github.repository }}/pull/${{ github.event.pull_request.number }}
+                      /code-review:code-review --comment
                   claude_args: |
                       --max-turns 50
                       --model claude-opus-4-6
-                      --allowedTools "Read,Write,Grep,Glob,Bash(cat:*),Bash(test:*),Bash(printf:*),Bash(jq:*),Bash(head:*),Bash(git:*),Bash(gh pr review:*),Bash(gh pr comment:*)"
                   additional_permissions: |
                       actions: read
