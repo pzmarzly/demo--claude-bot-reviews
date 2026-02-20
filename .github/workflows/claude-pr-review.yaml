@@ -27,6 +27,7 @@ jobs:
                   # Anthropic auth
                   # anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
                   claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
 
                   # Prompt
                   plugin_marketplaces: "https://github.com/anthropics/claude-code.git"
